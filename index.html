@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Daraz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="" width="150" height="35" class="d-inline-block align-text-top">
+          </a>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-sm-9 right-area">
+                <section>
+                    <div class="row product-area">
+                        <div class="col-sm-2"><img src="images/product-2.jpg" height="100px" width="100px" alt=""></div>
+                        <div class="col-sm-5">
+                            <p>Zhiyun Smooth Q3 Combo 3 Axis Foldable Gimbal Stabilizer for Smartphone with Protective Bag</p>
+                            <small>Only 7 item(s) in stock</small>
+                        </div>
+                        <div class="col-sm-2">
+                            <p>৳ <span class="price" style="color: red;" id="gimbal-total">8200</span></p>
+                        </div>
+                        <div class="col-sm-3 ">
+                            <button id="gimbal-minus" class="minus btn">-</button>
+                            <input id="gimbal-number" type="number" name="" id="" min="0" value="1" style="width: 50px; border-radius: 5px; text-align: center;">
+                            <button id="gimbal-plus" class="plus btn">+</button>
+                        </div>
+                    </div>    
+                </section>
+                <section>
+                    <div class="row product-area">
+                        <div class="col-sm-2"><img src="images/product-1.jpg" height="100px" width="100px" alt=""></div>
+                        <div class="col-sm-5">
+                            <p>iPhone 13 Pro 128GB</p>
+                            <small>Only 17 item(s) in stock</small>
+                        </div>
+                        <div class="col-sm-2">
+                            <p>৳ <span class="price" style="color: red;" id="iPhone-total">147600</span></p>
+                        </div>
+                        <div class="col-sm-3 ">
+                            <button id="iPhone-minus" class="minus btn">-</button>
+                            <input id="iPhone-number" type="number" name="" id="" min="0" value="1" style="width: 50px; border-radius: 5px; text-align: center;">
+                            <button id="iPhone-plus" class="plus btn">+</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <section>
+                    <div class="row product-area">
+                        <div class="col-sm-2"><img src="images/product 3.jpg" height="100px" width="100px" alt=""></div>
+                        <div class="col-sm-5">
+                            <p>Bar 5.1 4K Ultra HD 5.1-Channel Soundbar with True Wireless Surround Speakers, Black</p>
+                            <small>Only 2 item(s) in stock</small>
+                        </div>
+                        <div class="col-sm-2">
+                            <p>৳ <span class="price" style="color: red;" id="speakers-total">24800</span></p>
+                        </div>
+                        <div class="col-sm-3 ">
+                            <button id="speakers-minus" class="minus btn">-</button>
+                            <input id="speakers-number" type="number" name="" id="" min="0" value="1" style="width: 50px; border-radius: 5px; text-align: center;" >
+                            <button id="speakers-plus" class="plus btn">+</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row product-area">
+                        <div class="col-sm-2"><img src="images/product-4.jpg" height="100px" width="100px" alt=""></div>
+                        <div class="col-sm-5">
+                            <p>NB999 men's sports shoes fashion casual retro wild breathable mesh running sneakers</p>
+                            <small>Only 31 item(s) in stock</small>
+                        </div>
+                        <div class="col-sm-2">
+                            <p>৳ <span class="price" style="color: red;" id="shoes-total">1800</span></p>
+                        </div>
+                        <div class="col-sm-3 ">
+                            <button id="shoes-minus" class="minus btn">-</button>
+                            <input id="shoes-number" type="number" name="" id="" min="0" value="1" style="width: 50px; border-radius: 5px; text-align: center;">
+                            <button id="shoes-plus" class="plus btn">+</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-sm-3 total-area">
+                <h2>Order Summery</h2>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 w-100 bd-highlight">SubTotal</div>
+                    <div id="sub-total" class="p-2 flex-shrink-1 bd-highlight">182400</div>
+                </div>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 w-100 bd-highlight">Discount (5%)</div>
+                    <div id="discount" class="p-2 flex-shrink-1 bd-highlight">9120</div>
+                </div>
+                <div class="d-flex bd-highlight">
+                    <div class="p-2 w-100 bd-highlight">Total</div>
+                    <div id="total-price" class="p-2 flex-shrink-1 bd-highlight">173280</div>
+                </div>
+            <button class="checkout">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
